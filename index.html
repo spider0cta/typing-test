@@ -7,14 +7,128 @@
         integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
     <link rel='shortcut icon' type='image/x-icon' href='./icons/keyboard.svg' />
-    <link rel="stylesheet" href="styling.css">
     <link rel="stylesheet" href="./style.css">
     <title>Typing Test</title>
 </head>
 
 <body>
 
-    
+    <div class="container-fluid">
+        <div class="text-center">
+            <header><h1>Typing Speed Test</h1></header>
+            <div class="row">
+                <!-- wpm -->
+                <div class="col-3 measurement">
+                    <div class="meas_container">
+
+                        <div class="typingIcon">
+                            <img src="./images/wpm.png" alt="speed-image" width="60">
+                        </div>
+                        <div id="wpm" class="">0
+                        </div>
+                        <div class="title"><span>WPM</span>
+                        </div>
+                    
+                    </div>
+                    <div class="change">
+                        <span id="wpmChange"></span>
+                    </div>
+                </div>
+
+                <!-- cpm -->
+                <div class="col-3 measurement text-center">
+                    <div class="meas_container text-center">
+                
+                        <div class="typingIcon">
+                            <img src="./images/cpm.png" alt="CPM-image" width="30">
+                        </div>
+                        <div id="cpm" class="">0
+                        </div>
+                        <div class="title"><span>CPM</span>
+                        </div>
+                
+                    </div>
+                    <div class="change">
+                        <span id="cpmChange"></span>
+                    </div>
+                </div>
+
+            <!-- accuracy -->
+                <div class="col-3 measurement text-center">
+                    <div class="meas_container text-center">
+                
+                        <div class="typingIcon">
+                            <img src="./images/acc.png" alt="speed-image" width="60">
+                        </div>
+                        <div id="accuracy" class="">0%
+                        </div>
+                        <div class="title"><span>Accuracy</span>
+                        </div>
+                
+                    </div>
+                    <div class="change">
+                        <span id="accuracyChange"></span>
+                    </div>
+                </div>
+                <!-- timer -->
+                <div class="col-3 measurement text-center">
+                    <div class="meas_container text-center">
+                
+                        <div class="typingIcon">
+                            <img src="./images/watch.png" alt="speed-image" width="50">
+                        </div>
+                        <div id="timeLeft" class="">60
+                        </div>
+                        <div class="title"><span>Time Left</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- words area -->
+            <div id="content" class="text-center"></div>
+            
+            <!-- input area-->
+            <div>
+                <input type="text" placeholder="type here" class="text-center" id="input">
+            </div>
+            
+            <!--keyboard image-->
+            <div class="keyboard"></div>
+            
+            <!--restart button-->
+            <div class="restart">
+                <button type="button" class="btn btn-primary btn-lg" onclick="location.reload()">Restart</button>
+            </div>
+
+            <!-- certificate modal-->
+            <div class="modal" id="myModal">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">You finished your test!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="name" class="sr-only">Enter your name: </label>
+                                <input type="text" class="form-control" id="name" placeholder="Your full name">
+            
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-info" id="download">Download your certificate</button>
+            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 

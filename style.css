@@ -1,8 +1,116 @@
+/* main styling */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
 /* styling body element */
 body {
-  background-image: url("./images/wood-1759566.jpg");
+  background: linear-gradient(
+      to top,
+      rgba(34, 32, 41, 1),
+      rgba(34, 32, 41, 0.8)
+    ),
+    url("./images/wood-1759566.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   color: #fff;
+  min-height: 100vh;
+}
+
+.meas_container {
+  background-color: rgba(116, 94, 112, 0.3);
+}
+
+.row {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.typingIcon {
+  height: 5rem;
+}
+
+.change {
+  height: 2.5rem;
+  font-size: 1.6rem;
+}
+#content {
+  height: 12rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 1rem auto;
+  font-size: 3rem;
+  overflow: hidden;
+  padding: 0 0.5rem;
+  line-height: 4rem;
+}
+
+#input {
+  background-color: rgba(116, 94, 112, 0.3);
+  width: 100%;
+  font-size: 3rem;
+  color: rgb(233, 190, 190);
+  border: 1px solid rgba(116, 94, 112, 0.3);
+  outline: none;
+  padding: 1rem;
+}
+
+.keyboard {
+  min-height: 25rem;
+  max-height: 30rem;
+  background: url("./images/keyboard.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.restart button {
+  background-color: rgba(116, 94, 112, 0.3);
+  padding: 1rem 3rem;
+  outline: none;
+  cursor: pointer;
+  border: 0.3rem solid rgba(116, 94, 112, 0.3);
+  font-size: 1.5rem;
+}
+
+.restart button:hover,
+.restart button:focus,
+.restart button:active {
+  background-color: rgba(116, 94, 112, 0.8);
+  outline: none;
+  border: 0.3rem solid rgba(116, 94, 112, 0.3);
+}
+
+/* classes for js */
+.scoreDown,
+.scoreUp {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.scoreDown {
+  background-color: mediumvioletred;
+  color: #fff;
+}
+
+.scoreUp {
+  background-color: greenyellow;
+  color: black;
+}
+
+
+/* modal */
+
+.modal{
+    color: black;
 }
