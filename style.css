@@ -1,0 +1,8 @@
+/* styling body element */
+body {
+  background-image: url("./images/wood-1759566.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+}
