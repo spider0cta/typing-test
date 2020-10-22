@@ -114,6 +114,26 @@ body {
   color: black;
 }
 
+.boot-input {
+  font-size: 1.2rem;
+}
+.activeWord {
+  background-color: greenyellow;
+  border-radius: 5px;
+}
+
+.correctCharacter {
+  color: mediumblue;
+}
+
+.wrongCharacter {
+  color: mediumvioletred;
+}
+
+.result {
+  font-size: 20px;
+}
+
 /* media quieries */
 
 @media only screen and (max-width: 444px) {

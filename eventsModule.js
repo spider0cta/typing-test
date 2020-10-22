@@ -119,7 +119,19 @@ var eventsModule = (function (dModule, uModule, cModule, wModule) {
           uModule.scroll();
         }
       });
+
     //click on download button event listener
+    uModule
+      .getDOMElements()
+      .download.addEventListener("click", function (event) {
+        if (uModule.isNameEmpty()) {
+          uModule.flagNameInput();
+        } else {
+          var certificateData = dModule.getCertificateData();
+          console.log(certificateData);
+          certificateModule.generateCertificate(certificateData);
+        }
+      });
   };
 
   //scroll active word into middle view on window resize

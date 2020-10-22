@@ -3,17 +3,6 @@ var dataModule = (function () {
 
   //shuffle function
   var shuffle = function (array) {
-    //[1, 2, 3] -> [3, 1, 2]
-    //newArray[]
-    //select random element: 2
-    //newArray[2]
-    //oldArray[1, 3]
-    //select random element: 1
-    //newArray[2, 1]
-    //oldArray[3]
-    //select random element: 3
-    //newArray[2, 1, 3]
-    //oldArray[]
     var newArray = [];
     var randomIndex;
     var randomElement;
@@ -22,13 +11,13 @@ var dataModule = (function () {
       randomIndex = Math.floor(Math.random() * array.length);
       randomElement = array[randomIndex];
       newArray.push(randomElement);
-      //delete randomElement from array
+      //delete the randomElement from the array
       array.splice(randomIndex, 1);
     }
     return newArray;
   };
 
-  //capitalize first letter of a string
+  //this function capitalizes the first letter of a string
   String.prototype.capitalize = function () {
     var newString = "";
     var firstCharCap = this.charAt(0).toUpperCase();
@@ -47,7 +36,7 @@ var dataModule = (function () {
     });
   };
 
-  //addRandomPunctuation function
+  //add Random Punctuation function that takes array of strings and add punctiuations to them
   //array['word1', 'word2', 'word3']
   //array['word1.', 'word2?', 'word3,']
   var addRandomPunctuation = function (arrayOfStrings) {
@@ -334,6 +323,13 @@ var dataModule = (function () {
 
     getLineReturn() {
       return lineReturn;
+    },
+
+    getCertificateData() {
+      return {
+        wpm: appData.results.wpm,
+        accuracy: appData.results.accuracy,
+      };
     },
 
     returnData() {

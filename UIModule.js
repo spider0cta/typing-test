@@ -13,6 +13,7 @@ var UIModule = (function () {
     //user input
     textInput: document.querySelector("#input"),
     nameInput: document.querySelector(".form-group"),
+    nameField: document.getElementById("name"),
     //test words
     content: document.getElementById("content"),
     activeWord: "",
@@ -162,9 +163,13 @@ var UIModule = (function () {
       DOMElements.textInput.focus();
     },
 
-    isNameEmpty: function () {},
+    isNameEmpty: function () {
+      return DOMElements.nameField.value == "";
+    },
 
-    flagNameInput: function () {},
+    flagNameInput: function () {
+      DOMElements.nameField.style.borderColor = "red";
+    },
 
     spacePressed: function (event) {
       return event.data == " ";
