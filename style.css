@@ -93,9 +93,9 @@ body {
 /* classes for js */
 .scoreDown,
 .scoreUp {
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-    font-size: 1.2rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
 }
 
 .scoreDown {
@@ -108,9 +108,23 @@ body {
   color: black;
 }
 
-
 /* modal */
 
-.modal{
-    color: black;
+.modal {
+  color: black;
+}
+
+/* media quieries */
+
+@media only screen and (max-width: 444px) {
+  .title {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (max-width: 312px) {
+  .meas_container {
+    background: none;
+  }
 }
