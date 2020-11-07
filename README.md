@@ -12,7 +12,7 @@ Typing speed test application using vanilla javaScript with a certificate of com
 
 # ScreenShots
 
-![DEMO](https://github.com/cycl0matic/Typing-Speed-Test/blob/master/images/demo1.png)
+![DEMO](https://github.com/cycl0matic/TypingTest/blob/main/images/demo1.png)
 
 ![DEMO](https://github.com/cycl0matic/Typing-Speed-Test/blob/master/images/demo2.png)
 
