@@ -17,4 +17,4 @@ Typing speed test application using vanilla javaScript with a certificate of com
 ![DEMO](https://github.com/cycl0matic/TypingTest/blob/main/images/demo2.png)
 
 # Access the App here :
-https://cycl0matic.github.io/TypingTest/
+https://cycl0matic.github.io/typing-test/
