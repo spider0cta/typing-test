@@ -20,4 +20,4 @@ Typing speed test application using vanilla javaScript with a certificate of com
 
 
 ## Access the App here :
-https://cycl0matic.github.io/typing-test/
+https://urodacus.github.io/typing-test/
